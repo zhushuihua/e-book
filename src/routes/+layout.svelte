@@ -4,3 +4,7 @@
 
 <Header />
 <slot />
+
+<style>
+    @import "../../static/main.scss";
+</style>

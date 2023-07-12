@@ -21,16 +21,15 @@
 <!-- fixed-top fixed-bottom (class) -->
 <Navbar expand="md">
     <NavbarBrand href="#intro" class="fw-bold text-secondary"
-        >Net Ninjia Pro</NavbarBrand
+        ><Icon name="book-half" class="me-3" />Net Ninjia Pro</NavbarBrand
     >
     <NavbarToggler on:click={() => (isOpen = !isOpen)} />
     <Collapse {isOpen} navbar expand="md">
         <Nav class="ms-auto" navbar>
             <NavItem><NavLink href="#pricing">Pricing</NavLink></NavItem>
-            <NavItem
-                ><NavLink href="https://uma.sg/abacus">UMA Abacus</NavLink
-                ></NavItem
-            >
+            <NavItem><NavLink href="#topics">Topics</NavLink></NavItem>
+            <NavItem><NavLink href="#reviews">Reviews</NavLink></NavItem>
+            <NavItem><NavLink href="#contact">Contact</NavLink></NavItem>
             <Dropdown inNavbar nav>
                 <DropdownToggle nav caret>Apps</DropdownToggle>
                 <DropdownMenu end>
@@ -45,7 +44,7 @@
                 </DropdownMenu>
             </Dropdown>
             <NavItem>
-                <Button color="secondary" outline>Register</Button>
+                <Button color="#pricing" outline>Register</Button>
             </NavItem>
         </Nav>
     </Collapse>
